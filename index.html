@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Firebase Google Authentication</title>
+    
+  </head>
+  <body>
+    <div id="firebaseui-auth-container"></div>
+    <p style="text-align: center">Firebase Authentication Google Account </p>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#config-web-app -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDFmzfvkGy-IP9SV14DOOL-vh9Hlnr2ozM",
+    authDomain: "web-app-41faf.firebaseapp.com",
+    projectId: "web-app-41faf",
+    storageBucket: "web-app-41faf.appspot.com",
+    messagingSenderId: "25186060840",
+    appId: "1:25186060840:web:792605e158b3c7de74c31d"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      
+    </script>
+    <!-- Firebase UI -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"
+    />
+    <script src="./auth.js"></script>
+  </body>
+</html>
